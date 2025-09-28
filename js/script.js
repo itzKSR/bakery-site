@@ -1,3 +1,25 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBE27riVZF47qGcP_Tb4DkkOkB1agPer6c",
+  authDomain: "sweet-delights-bakery-b9bfa.firebaseapp.com",
+  projectId: "sweet-delights-bakery-b9bfa",
+  storageBucket: "sweet-delights-bakery-b9bfa.firebasestorage.app",
+  messagingSenderId: "850650886927",
+  appId: "1:850650886927:web:f81cb07ee326c0cdac447a",
+  measurementId: "G-5YKJRXP5G8"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 document.addEventListener('DOMContentLoaded', function() {
     // Header scroll effect
     window.addEventListener('scroll', function() {
